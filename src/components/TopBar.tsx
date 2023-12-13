@@ -1,5 +1,3 @@
-'use client'
-
 import { FormEvent, useState } from "react"
 import { SearchInput } from "./SearchInput"
 import { StyledButton } from "./StyledButton"
