@@ -1,11 +1,16 @@
 import { GlobalStyles } from "@/styles/global";
 import { theme } from "@/styles/theme";
 import { ThemeProvider } from "styled-components";
+import Head from "next/head";
 
 export default function Home() {
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyles />
+            
+            <Head>
+                <title>Search Wiki Pages</title>
+            </Head>
 
             <div className="aligncenter">
                 <h2>Welcome to Search Wiki Pages</h2>
