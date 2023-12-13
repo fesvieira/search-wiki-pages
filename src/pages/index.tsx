@@ -1,7 +1,6 @@
 import { GlobalStyles } from "@/styles/global";
 import { theme } from "@/styles/theme";
 import { ThemeProvider } from "styled-components";
-import PageCard from "./[searchTerm]/components/PageCard";
 
 export default function Home() {
     return (

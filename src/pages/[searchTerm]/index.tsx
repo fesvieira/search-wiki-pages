@@ -3,7 +3,6 @@ import { FC } from "react"
 import { GetServerSideProps, InferGetStaticPropsType } from "next"
 import PageCard from "./components/PageCard";
 
-
 export const getServerSideProps = (async (ctx) => {
     const searchTerm = ctx.params?.searchTerm
 

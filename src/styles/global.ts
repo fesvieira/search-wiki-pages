@@ -45,9 +45,11 @@ export const GlobalStyles = createGlobalStyle`
         align-items: center;
         row-gap: 16px;
         column-gap: 16px;
-        width: 90vh;
+        width: 100%;
         background-color: #ededfd;
         border-radius: 8px;
         padding: 8px;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 `

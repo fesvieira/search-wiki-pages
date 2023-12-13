@@ -5,6 +5,10 @@ type Props = {
 }
 const PageCard = ({ result }: Props) => {
 
+    if(result === undefined) {
+        return(<></>)
+    }
+    
     const textCol = (
         <div>
             <h3>
