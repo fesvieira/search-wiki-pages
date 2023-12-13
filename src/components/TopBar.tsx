@@ -2,6 +2,7 @@ import { FormEvent, useState } from "react"
 import { SearchInput } from "./SearchInput"
 import { StyledButton } from "./StyledButton"
 import { useRouter } from "next/router"
+import Link from "next/link"
 
 export const TopBar = () => {
     const [search, setSearch] = useState('')
@@ -15,10 +16,9 @@ export const TopBar = () => {
         router.push(`/${search}/`)
     }
 
-
     return (
         <div className={`row card`}>
-            <h1>Search Wiki Pages</h1>
+            <Link href={"/"} className="cleanLink"><h1>Search Wiki Pages</h1></Link>
             <form
                 className="row"
                 onSubmit={handleSubmit}>

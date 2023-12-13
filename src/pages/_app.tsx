@@ -11,8 +11,8 @@ function MyApp({ Component, pageProps }: AppProps) {
             <GlobalStyles />
             <div className={montserrat.className}>
                 <TopBar />
+                <Component {...pageProps} />
             </div>
-            <Component {...pageProps} />
         </>
     )
 }

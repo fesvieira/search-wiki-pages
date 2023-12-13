@@ -18,4 +18,15 @@ export const GlobalStyles = createGlobalStyle`
         padding: 8px;
         margin: 0px;
     }
+
+    .aligncenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cleanLink {
+        text-decoration: none;
+        color: black;
+    }
 `
