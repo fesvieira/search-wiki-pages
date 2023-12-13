@@ -1,6 +1,5 @@
-import { log } from "console"
 import getWikiResults from "../../../lib/getWikiResults"
-import { FC, useEffect, useState } from "react"
+import { FC } from "react"
 import { GetServerSideProps, InferGetStaticPropsType } from "next"
 
 
@@ -24,8 +23,7 @@ export const getServerSideProps = (async (ctx) => {
 const SearchResults: FC<InferGetStaticPropsType<typeof getServerSideProps>> = ({
     results
 }) => {
-
-    const content = (
+    return (
         <main>
             {
                 results
@@ -36,8 +34,6 @@ const SearchResults: FC<InferGetStaticPropsType<typeof getServerSideProps>> = ({
             }
         </main>
     )
-
-    return content
 }
 
 export default SearchResults
