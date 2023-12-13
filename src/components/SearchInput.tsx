@@ -6,5 +6,5 @@ export const SearchInput = styled.input`
     box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     padding: 8px;
-    width: 40vh;
+    size: 40;
 `

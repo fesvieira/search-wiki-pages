@@ -29,4 +29,25 @@ export const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         color: black;
     }
+
+    .searchColumn {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .pageCardRow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 16px;
+        column-gap: 16px;
+        width: 90vh;
+        background-color: #ededfd;
+        border-radius: 8px;
+        padding: 8px;
+    }
 `

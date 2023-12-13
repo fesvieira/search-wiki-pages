@@ -1,6 +1,7 @@
 import getWikiResults from "../../../lib/getWikiResults"
 import { FC } from "react"
 import { GetServerSideProps, InferGetStaticPropsType } from "next"
+import PageCard from "./components/PageCard";
 
 
 export const getServerSideProps = (async (ctx) => {
@@ -24,11 +25,11 @@ const SearchResults: FC<InferGetStaticPropsType<typeof getServerSideProps>> = ({
     results
 }) => {
     return (
-        <main>
+        <main className="searchColumn">
             {
                 results
                     ? Object.values(results).map(result => {
-                        return <div>{JSON.stringify(result)}</div>
+                        return <PageCard key={result.pageid} result={result}/>
                     })
                     : <h2>{`Not Found`}</h2>
             }

@@ -1,6 +1,7 @@
 import { GlobalStyles } from "@/styles/global";
 import { theme } from "@/styles/theme";
 import { ThemeProvider } from "styled-components";
+import PageCard from "./[searchTerm]/components/PageCard";
 
 export default function Home() {
     return (
@@ -15,7 +16,7 @@ export default function Home() {
                 <img 
                     src={"https://upload.wikimedia.org/wikipedia/commons/d/de/Wikipedia_Logo_1.0.png"}
                     width={200}
-                />
+                />         
                 
             </div>
             
